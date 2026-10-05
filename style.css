@@ -1,0 +1,165 @@
+/*
+Theme Name: Driving GP - Secondary
+Theme URI: https://example.com/driving-gp
+Author: Custom Theme Developer
+Author URI: https://example.com
+Description: Driving GP - Secondary (Updated Live Version with SEO Landing Page & FAQs)
+Version: 4.2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: driving-school, education, elementor-ready, responsive-layout, custom-colors, custom-menu, featured-images, theme-options, translation-ready
+Text Domain: driveria
+*/
+
+/* Core Design System Variables */
+:root {
+  --driveria-primary: #FFB800;
+  --driveria-primary-hover: #E0A200;
+  --driveria-secondary: #0F172A;
+  --driveria-secondary-light: #1E293B;
+  --driveria-dark: #0A0F1D;
+  --driveria-text: #334155;
+  --driveria-text-muted: #64748B;
+  --driveria-light: #F8FAFC;
+  --driveria-white: #FFFFFF;
+  --driveria-accent: #2563EB;
+  --driveria-border: #E2E8F0;
+  --driveria-radius-sm: 8px;
+  --driveria-radius-md: 16px;
+  --driveria-radius-lg: 24px;
+  --driveria-shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --driveria-shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+  --driveria-shadow-lg: 0 20px 35px -10px rgba(15, 23, 42, 0.12);
+  --driveria-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --driveria-font-main: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Reset & Normalize */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--driveria-font-main);
+  background-color: var(--driveria-light);
+  color: var(--driveria-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--driveria-transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.driveria-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.driveria-section {
+  padding: 90px 0;
+  position: relative;
+}
+
+/* Utility Header Styles */
+.section-title-wrap {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px auto;
+}
+
+.section-subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 184, 0, 0.15);
+  color: #B48200;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--driveria-secondary);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  color: var(--driveria-text-muted);
+  font-size: 1.05rem;
+}
+
+/* Buttons */
+.btn-driveria {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: var(--driveria-radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: var(--driveria-transition);
+  text-align: center;
+}
+
+.btn-primary-driveria {
+  background-color: var(--driveria-primary);
+  color: var(--driveria-secondary);
+  box-shadow: 0 4px 14px rgba(255, 184, 0, 0.4);
+}
+
+.btn-primary-driveria:hover {
+  background-color: var(--driveria-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 184, 0, 0.5);
+}
+
+.btn-secondary-driveria {
+  background-color: var(--driveria-secondary);
+  color: var(--driveria-white);
+}
+
+.btn-secondary-driveria:hover {
+  background-color: var(--driveria-secondary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
+}
+
+.btn-outline-driveria {
+  background: transparent;
+  color: var(--driveria-secondary);
+  border: 2px solid var(--driveria-secondary);
+}
+
+.btn-outline-driveria:hover {
+  background-color: var(--driveria-secondary);
+  color: var(--driveria-white);
+}
